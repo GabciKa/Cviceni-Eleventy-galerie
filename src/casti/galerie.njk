@@ -2,7 +2,7 @@
 	{% for obrazek in obrazky %}
 		<a href="/obrazek/{{ obrazek.popisek | slug }}/">
 			<div class="galerie__polozka">
-			<img class="galerie__obrazek" src="/obrazky/nahled/{{ obrazek.soubor }}" alt="Padající listí" width="194" height="194">
+			<img class="galerie__obrazek" src="/obrazky/nahled/{{ obrazek.soubor }}" alt={{ obrazek.popisek }} width="194" height="194">
 			<h3 class="galerie__popisek">{{ obrazek.popisek }}</h3>
 			</div>
 		</a>
